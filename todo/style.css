@@ -1,0 +1,67 @@
+ul li {
+    list-style: none;
+    font-size: 17px;
+    cursor: pointer;
+    user-select: none;
+    padding: 12px 8px 12px 50px ;
+    position: relative;
+}
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image: url('/todo/icons/unchecked.png');
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+    /* border: 2px gray solid; */
+
+}
+
+ul li.checked {
+    color: gray;
+}
+
+ul li.checked::before{
+    background-image: url('/todo/icons/checked.png');
+}
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    columns: #555;
+    border-radius: 50%;
+}
+ul li span:hover {
+    background: #edeef0;
+}
+
+::-webkit-scrollbar {
+    width: 7px; 
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: orangered;; 
+    border-radius: 6px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #FFC200; 
+}
+
+::-webkit-scrollbar-track {
+    background-color: #FFF; 
+}
+
+
+::-webkit-scrollbar-corner {
+    background-color: #FFF;
+}

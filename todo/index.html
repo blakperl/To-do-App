@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>TodoList</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/todo/style.css">
+</head>
+<body class="bg-blue-800 flex justify-center items-center h-screen">
+   <div class="w-[500px] h-[70vh] bg-white rounded-lg px-8 py-12 overflow-hidden">
+    <h2 class="flex items-center gap-4 mb-8 text-3xl font-bold">To-Do App <img src="/todo/icons/icon.png" alt="" class="w-10 h-10 items-center"></h2>
+    <div class="relative inline-block">
+        <input id="todoinput" type="text" placeholder="Enter your todo..." class="py-4 pl-8 pr-12 border rounded-md text-gray-800 w-[400px]">
+        <button  onclick="addBtn()" class="absolute top-1/2 right-2 transform -translate-y-1/2 px-6 py-2 bg-orange-700 text-white">Add</button>
+    </div>
+  
+ <ul id="todolist" class="overflow-y-auto  max-h-[300px]">
+   <!-- <li class="checked">Task 1</li>
+   <li>Task 2</li>
+   <li>Task 3</li> -->
+   
+ </ul>
+   </div>
+   <script src="/todo/script.js"></script>
+</body>
+</html>
